@@ -3,6 +3,5 @@ Cross platform notification push service
 
 ##### Currently works on Linux and macOS.
 
-`from pynotify import pynotify`
-
+###### Pushing a notification:
 `notification = pynotify("Title","This is a notification").push()`

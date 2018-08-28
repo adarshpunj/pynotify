@@ -17,4 +17,4 @@ class pynotify():
 
         if platform.system() == 'Linux':
             command = "notify-send"+" "+self.doubleQuote+self.title+self.doubleQuote+" "+self.doubleQuote+self.message+self.doubleQuote
-            os.system(self.singleQuote+command+self.singleQuote)
+            os.system(command)

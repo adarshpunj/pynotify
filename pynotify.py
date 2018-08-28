@@ -9,8 +9,8 @@ class pynotify():
     def __init__(self,title,message):
         self.message = message
         self.title = title
+        
     def push(self):
-
         if platform.system() == 'Darwin':
             command = "osascript -e"+" 'display notification"+" "+'"'+self.message+'"'+''' with title "Notification"' '''
             os.system(command)

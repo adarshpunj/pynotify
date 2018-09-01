@@ -18,3 +18,8 @@ class pynotify():
         if platform.system() == 'Linux':
             command = "notify-send"+" "+self.doubleQuote+self.title+self.doubleQuote+" "+self.doubleQuote+self.message+self.doubleQuote
             os.system(command)
+        
+        #Displays an alertbox
+        if platform.system() == 'Windows':
+                command = self.doubleQuote+"msg * "+self.message+self.doubleQuote
+                os.system(command)

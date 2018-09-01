@@ -12,7 +12,7 @@ class pynotify():
         
     def push(self):
         if platform.system() == 'Darwin':
-            command = "osascript -e"+" 'display notification"+" "+'"'+self.message+'"'+''' with title "Notification"' '''
+            command = "osascript -e"+" 'display notification"+" "+'"'+self.message+'"'+''' with title "{}"' '''.format(self.title)
             os.system(command)
 
         if platform.system() == 'Linux':
